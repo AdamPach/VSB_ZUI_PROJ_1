@@ -1,0 +1,19 @@
+Prompt použitý pro vygenerování hry.
+
+Ahoj potřeboval bych aby jsi naprogramoval 2048 v pythonu. Dám ti však jisté specifikace jak daná implementace má vypadat a co bude poskytovat (na úrovni kodu)
+
+1. Bude textově založená. Takže nebudeš potřebovat žádnou GUI knihovnu. Každé kolo hry může vypadat v konzoli třeba takhle
+
+1024 | 512 | 128 | 4
+-----+-----+-----+----
+ 256 | 64  | 16  | 2
+-----+-----+-----+----
+  32 | 8   | 4   | 2
+-----+-----+-----+----
+   4 | 2   | 2   | empty
+
+2. Potřebuji aby celá hra byla programově ovladatelná. Takže budu potřebovat metody, které mi poskytnou aktualní stav hracího pole a metody které umožní tahy a metody které ověří zda je ještě hra hratelná nebo je konec.
+
+3. Potřebuji aby hra byla zabalena v objektu a měla možnost se naklonovat. Aby jsem mohl mít v jdenu chvíli kopii hry a sní pracovart aniž bych ovlivnil originál.
+
+4. Jak jsem řekl implemetace má být programově ovladatelná. Je to proto že v budoucnu budu dělat solver na tuhle hru
