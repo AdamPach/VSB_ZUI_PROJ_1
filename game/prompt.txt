@@ -17,3 +17,8 @@ Ahoj potřeboval bych aby jsi naprogramoval 2048 v pythonu. Dám ti však jisté
 3. Potřebuji aby hra byla zabalena v objektu a měla možnost se naklonovat. Aby jsem mohl mít v jdenu chvíli kopii hry a sní pracovart aniž bych ovlivnil originál.
 
 4. Jak jsem řekl implemetace má být programově ovladatelná. Je to proto že v budoucnu budu dělat solver na tuhle hru
+
+------
+Potřebuji opravu této hry potřebuji aby si výpočet aktualního score hry a metodu jak toto skore získat
+------
+Přidej enum který říká stav hry PLAYING, WIN, LOSE, Potom tenhle enum vracej v metodě is game over. Pokud existuje dlaždice 2048 tak WIN, pokud neexistuje a lze táhout PLAYING, pokud nelze táhnout a neexistuje pak je to LOSE
