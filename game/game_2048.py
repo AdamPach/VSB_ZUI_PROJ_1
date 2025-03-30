@@ -128,6 +128,9 @@ class Game2048:
         # 3) Pokud nic z výše uvedeného, pak LOSE
         return GameState.LOSE
 
+    def print_statistics(self):
+        print(f"Score: {self.score}")
+
     # ====================
     # Interní pomocné metody
     # ====================

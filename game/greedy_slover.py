@@ -25,10 +25,4 @@ class GreedySolver:
             self.game.print_board()
             state = self.game.is_game_over()
 
-        print("Game over!")
-        print("Final score:", self.game.get_score())
-
-        if state == GameState.WIN:
-            print("You won!")
-        else:
-            print("You lost!")
+        return state
