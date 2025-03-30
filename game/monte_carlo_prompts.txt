@@ -1,0 +1,19 @@
+Hello, I am doing a 2048 solver in Python. I have already prepared a game which is represented as an object which provides a methods. Your job is to create a monte carlo solver with a heuristic. I will give you the game implementation.
+------
+It mostly fails during 512 tile is on the playground. I will give you last result of the game, Can you analyze it and improve the parameters and weights
+
+    2 |   128 |    16 |   512
+-----+-----+-----+-----
+    8 |     2 |     8 |     4
+-----+-----+-----+-----
+    4 |     8 |     4 |    32
+-----+-----+-----+-----
+    2 |     4 |    16 |     2
+
+https://claude.site/artifacts/f0703acf-68e2-4961-863c-c1048baa4cd7
+
+
+------
+
+Hello, I am doing a 2048 solver in Python. I have already prepared a game which is represented as an object which provides a methods. Your job is to create a monte carlo solver without heurestic, Just simulate the game till the end evaluate the results and decide the best move. I will give you the game implementation
+https://claude.site/artifacts/09c58e2b-f282-4430-9dd7-37281b48d850
