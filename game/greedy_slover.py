@@ -1,9 +1,10 @@
-from game_2048 import GameState
+from game.game_2048 import GameState
 
 
 class GreedySolver:
-    def __init__(self, game):
+    def __init__(self, game, display=False):
         self.game = game
+        self.display = display
 
     def solve(self):
         state = self.game.is_game_over()
@@ -21,8 +22,11 @@ class GreedySolver:
                     best_score = new_game.get_score()
 
             self.game.move(best_move)
-            print(f"Moving {best_move}")
-            self.game.print_board()
+
+            if self.display:
+                print(f"Moving {best_move}")
+                self.game.print_board()
+
             state = self.game.is_game_over()
 
         return state

@@ -1,3 +1,4 @@
+from game.stats_runner import StatisticsRunner
 from monte_carlo_solver import MonteCarloSolver, MonteCarloSimpleSolver
 from game_2048 import Game2048
 from greedy_slover import GreedySolver
@@ -5,17 +6,8 @@ from game_2048 import GameState
 
 
 def main():
-    game = Game2048()
-    solver = MonteCarloSimpleSolver(game)
-
-    final_state = solver.solve()
-
-    if final_state == GameState.WIN:
-        print("You won!")
-    else:
-        print("You lost!")
-
-    game.print_statistics()
+    runner = StatisticsRunner(MonteCarloSimpleSolver, 30)
+    runner.run()
 
 if __name__ == "__main__":
     main()
